@@ -6,11 +6,15 @@
    
 }
 
+
+
 /*nav*/
 .nav-bar{
     display: flex;
     justify-content: space-between;
     background-color: #0a192f;
+    position: fixed;
+    width: 100%;
     padding: 10px;
 }
 
@@ -20,36 +24,87 @@
     font-weight: bolder;
 }
 
-.nav-menu{
-    display: flex;
-}
-
-.nav-li {
-    
-    flex-direction: row;
-    margin: 20px;
-}
-
-.nav-bar a{
+.logo a{
     color: teal;
+}
+
+.logo a:hover{
+    color: white;
     text-decoration: none;
 }
 
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 15px;
+    padding-right: 40px;
+}
 
+.nav-li {
+
+    list-style: none;
+
+}
+
+.nav-bar .nav-a{
+    color: teal;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.nav-bar .nav-a:hover{
+    color: white;
+   
+
+}
+
+.menu-wrapper{
+    display: flex;
+
+}
+
+.menu-btn{
+    display: none;
+    cursor: pointer;
+    
+}
+.menu-btn:hover .bar {
+    background-color: white;
+}
+
+.menu-btn .bar{
+    background-color: teal;
+    width: 40px;
+    height: 5px;
+    margin: 5px;
+    transition: all 0.3 ease
+}
 
 
 /* home */
-#home{
-    background-color: #0a192f;
-}
 
-#home-container h2{
+.home-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.home-text{
+    width: 100;
+    height: auto;
+    padding: 12% 20px;
+    text-align: center;
+    
+    
+}
+.home-container h2{
     color: teal;
 }
 
 /* about */
 
-#aboutme{
+#{
     background-color: #0a192f;
 }
 
@@ -61,12 +116,12 @@
 }
 
 /* gallery */
-#mygallery{
+#{
     background-color: #0a192f;
 }
 
 /* skills */
-#skills{
+#{
     background-color: #0a192f;
 }
 
@@ -75,7 +130,7 @@
 
 /* contact */
 
-#contactme{
+#{
 background-color: #0a192f;
 
 }
@@ -147,17 +202,65 @@ form button{
     
 }
 
+@media all and (max-width: 576px){}
+
+
 
 @media all and (max-width: 768px){
 
-   
+
 .nav-menu{
+    position: absolute;
+    display: block;
+    width: 400px;
+    text-align: center;
+    padding: 40px;
+    height: 100vh;
+    top:0;
+    right: -100%;
+    background-color: #0a192f;
+    transition:.3s ease;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.nav-menu.active{
+    right: 0;
+    
+}
+
+body{
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+}
+
+.nav-li{
+    margin: 60px;
+    border-bottom:1px solid white ;
+    
+}
+
+
+.menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    
+}
+
+.menu-btn.active .bar:nth-child(1){
+    transform: translateY(5px) rotate(45deg)   
+}
+.menu-btn.active .bar:nth-child(2){
     display: none;
 }
-
-.hamburger-menu{
-    display: block;
+.menu-btn.active .bar:nth-child(3){
+    transform: translateY(-5px) rotate(-45deg)
 }
 
 
 }
+@media all and (max-width: 992px){}
+
+@media all and (max-width: 1200px){}
