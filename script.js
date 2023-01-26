@@ -14,3 +14,11 @@ document.querySelectorAll('nav-a').forEach(n => n.
 }
     
     ));
+
+const darkModeBtn = document.querySelector(".darkmode")
+
+darkModeBtn.addEventListener("click",() => {
+    darkModeBtn.classList.toggle("active");
+    
+
+})
