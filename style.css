@@ -5,13 +5,13 @@
     font-family: 'VT323', monospace;
     
 }
-body{
+/* body{
     background-color: #0a192f;
 }
 body section{
     background-color: #0a192f;
     color: white;
-}
+} */
 
 body h2{
     color: teal;
@@ -53,8 +53,9 @@ body button:hover{
 .darkmode{
     color: white;
     font-size: 20px;
+    display: none;
 }
-.darkmode:hover{
+/* .darkmode:hover{
     cursor: pointer;
     color: black;
 }
@@ -62,7 +63,7 @@ body button:hover{
     
         background-color: #0a192f;
     }
-
+ */
 
 .nav-menu{
     display: flex;
@@ -177,26 +178,20 @@ body button:hover{
     height:100px;
 }
 
-.tools{
-    display: flex;
-    justify-content: space-around;
-}
-
 .tool-wrapper h4{
     text-align:center;
 }
 
 
 /* projects */
-
-
-
-/* contact */
-
-#{
-background-color: #0a192f;
-
+.featured-projects p{
+    color: white;
 }
+
+.other-projects p{
+    color: white;
+}
+/* contact */
 
 
 .contact-container{
@@ -298,7 +293,7 @@ form button{
     width: 400px;
     text-align: center;
     padding: 40px;
-    height: 100vh;
+    height: 1001vh;
     top:0;
     right: 0;
     background-color: #0a192f;
