@@ -21,9 +21,12 @@
 </head>
 <body>
 
-    
+   
 
-        <nav class="nav-bar">
+
+
+
+      <nav class="nav-bar">
             
             <div class="logo">
               <a  href="#home">&#60;PN/&#62;</a>
@@ -33,8 +36,7 @@
             
             <div class="menu-wrapper">
                 
-              
-              
+            
               <ul class="nav-menu">
                 <li class="nav-li">
                   <a class="nav-a" href="#about">About </a>
@@ -51,9 +53,6 @@
                 </li>
               </ul>
 
-              <div class="darkmode"><span class="material-icons">
-                dark_mode
-                </span></div>
 
               <div class="menu-btn">
                 <div class="bar"></div>
@@ -62,24 +61,31 @@
               </div>
               
            </div>
-       </nav>
-
+       </nav> 
+     
+  <div class="container-fluid">   
       <section id="home">
             
-        <div class="home-container">
+        <div class="row home-container pb-5 pt-5 justify-content-center text-center">
 
-            <div class="home-text">
+            <div class="home-text col-lg-6 col-xl-8 col-md-8 col-sm-10">
                 <p>Hey, I'm</p>
-                <H1>Paul Aldrin Navera</H1>
-                <h4>I am Fullstack Web Developer based in the Philippines</h4>
+                <h1>Paul Aldrin Navera</h1>
+                <p>I am Fullstack Web Developer based in the Philippines</p>
                 <p>I like to build websites with great UI and User experience.</p>
                  
+                <div class="download">
+                  <button class="btn btn-primary"><i class="fa fa-download"></i>Resume</button>
+                  <button class="btn btn-primary"><i class="fa fa-download"></i>CV</button>
+                </div>
+                
+
             </div>
             
 
 
         
-        <div class="banner">
+        <div class="banner col-lg-6 col-xl-4 d-none d-lg-block d-xl-block">
             <img class="img-fluid" src="./images/programing.png" alt="">
         </div>
 
@@ -89,17 +95,17 @@
       </section>
 
       <section id="about">
-         <div class="about-container p-5">
+         <div class="about-container mt-5">
 
            
             <h2 class="text-center">Get to know me!</h2>
 
-            <div class="d-flex justify-content-around gap-3">
+            <div class="row justify-content-sm-center justify-content-around ">
 
-              <img class="img-fluid" src="./images/icon.png" alt=""> 
+              <img class="img-fluid col-xl-3 col-lg-3 m-5" src="./images/icon.png" alt=""> 
 
 
-            <div>
+            <div class="about-text col-xl-6 text-white text-center  mt-xl-5 mt-lg-5">
                 <p>Hello! My name is Paul and I enjoy creating things that live on the internet.</p> 
                 <p>My interest in web development started when I was in high school that is why I
                  pursued BS in Computer Science when I went to college.
@@ -120,14 +126,14 @@
 
     <section  id="skills">
       <div class="skills-container p-5">
-          <h2 class="text-center">Checkout my Skills</h2>
+          <h2 class="text-center p-5">Checkout my Skills!</h2>
           
-          <h3>Core technologies</h3>
+          <h3 class="text-primary">> Core technologies</h3>
 
-          <div class=" d-flex my-skills  m-3 justify-content-lg-around flex-wrap">  
+          <div class="my-skills row   m-3 justify-content-center text-white">  
 
 
-              <div class="m-5">
+              <div class="m-5 ">
                 <img class="img-fluid" src="./images/logo-html5.png" alt="">
                 <h3>HTML</h3>
                 <div class="progress">
@@ -138,7 +144,7 @@
                 </div>
               </div>
 
-              <div class="m-5">
+              <div class="m-5 ">
                 <img class="img-fluid"  src="./images/logo-css3.png" alt="">
                 <h3>CSS</h3>
                 <div class="progress">
@@ -150,9 +156,9 @@
 
               </div>
               
-              <div class="m-5">
+              <div class="m-5 ">
                 <img class="img-fluid" src="./images/logo-bootstrap.png" alt="">
-                <h3>bootstrap</h3>
+                <h3>Bootstrap</h3>
                 <div class="progress">
                   
                   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 25%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">75%
@@ -163,7 +169,7 @@
               </div>
             
               
-              <div class="m-5">
+              <div class="m-5 ">
                   <img class="img-fluid" src="./images/logo-rest.png" alt="">
                   <h3>Rest JS</h3>
                   <div class="progress">
@@ -175,7 +181,7 @@
 
               </div>
 
-              <div class="m-5">
+              <div class="m-5 ">
                   <img class="img-fluid" src="./images/logo-javascript.png" alt="">
                   <h3>Javascript</h3>
                   <div class="progress">
@@ -187,7 +193,7 @@
 
               </div>
 
-              <div class="m-5">
+              <div class="m-5 ">
                 <img class="img-fluid" src="./images/logo-mongodb.png" alt="">
                 <h3>MondoDB</h3>
                 <div class="progress">
@@ -197,7 +203,7 @@
 
               </div>
 
-              <div class="m-5">
+              <div class="m-5 ">
                 <img class="img-fluid" src="./images/logo-expressjs.png" alt="">
                 <h3>Express.js</h3>
                 <div class="progress ">
@@ -226,33 +232,33 @@
               </div>
             </div>  
 
-         </div>
+         
 
-          <div class="dev-tools">
-            <h3 class="m-5">Core Tools</h3>
+          <div class=" dev-tools pb-4">
+            <h3 class="text-primary">> Core Tools</h3>
 
-            <div class="tools d-flex justify-content-around justify-content-sm-center">
+            <div class="tools row  justify-content-center">
               
-              <div class="tool-wrapper m-sm-5">
+              <div class="tool-wrapper d-flex flex-column align-items-center justify-content-center  m-3 ">
                 <img class="img-fluid" src="./images/logo-visual-studio.png" alt="">
 
                 <h4>VS Code</h4>
               </div>
-              <div class="tool-wrapper m-sm-5">
+              <div class="tool-wrapper d-flex flex-column align-items-center m-3" >
               <img class="img-fluid" src="./images/logo-sublime-text-3.png" alt="">
 
                 <h4>Sublime Text 3</h4>
               </div>
-              <div class="tool-wrapper m-sm-5">
+              <div class="tool-wrapper d-flex flex-column align-items-center m-3  ">
               <img class="img-fluid" src="./images/logo-git.png" alt="">
 
                 <h4>Git</h4>
               </div>
-              <div class="tool-wrapper m-sm-5">
+              <div class="tool-wrapper d-flex flex-column align-items-center m-3 ">
                <img class="img-fluid" src="./images/logo-gitlab-ci-cd.png" alt="">
                 <h4>Gitlab ci-cd</h4>
               </div>
-              <div class="tool-wrapper m-sm-5">
+              <div class="tool-wrapper  d-flex flex-column align-items-center m-3">
                 <img class="img-fluid" src="./images/logo-postman.png" alt="">
                 <h4>Postman</h4>
               </div>
@@ -261,22 +267,19 @@
             </div>
           </div>
 
-      </div>
-
       
-
 
   </section>
 
 
-    <section  id="projects">
+    <section id="projects">
         <div class="projects-container p-5">
             <h2 class="text-center">Projects</h2>
 
         
-          <div class="featured-projects d-flex justify-content-lg-around  justify-content-sm-center flex-wrap ">
+          <div class="featured-projects row justify-content-lg-around  justify-content-sm-center  ">
 
-            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-sm-5  bg-dark p-3">
+            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-3  bg-dark p-3 mb-sm- g-2">
               <img src="./images/projects/project1.png" class=" card-img-top img-fluid" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Thesis Project</h5>
@@ -285,7 +288,7 @@
               </div>
             </div>
 
-            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-sm-5  bg-dark p-3" >
+            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-3  bg-dark p-3" >
               <img src="./images/projects/capstone1.png" class="card-img-top img-fluid" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Capstone 1 project</h5>
@@ -294,7 +297,7 @@
               </div>
             </div>
             
-            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-sm-5  bg-dark p-3" >
+            <div class="card col-xl-5 col-lg-5 col-md-12 col-sm-12 m-3   bg-dark p-3" >
               <img src="./images/projects/project1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Capstone 2 project</h5>
@@ -303,7 +306,7 @@
               </div>
             </div>
 
-            <div class="card col-xl-5  col-lg-5 col-md-12 col-sm-12 m-sm-5  bg-dark p-3" >
+            <div class="card col-xl-5  col-lg-5 col-md-12 col-sm-12 m-3   bg-dark p-3" >
               <img src="./images/projects/capstone1.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Capstone 3 project</h5>
@@ -314,34 +317,34 @@
 
         </div>
 
-          <div class="other-projects d-flex justify-content-lg-around justify-content-sm-center flex-wrap">
+          <div class="other-projects row justify-content-center mt-5 ">
             
-            <div class="card  m-3 bg-dark col-xl-3 col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card  m-3 bg-dark col-xl-3 col-lg-3 col-md-5 col-sm-12  p-3">
+              <img src="./images/projects/activity6.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 4 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project</p>
                 <a href="#" class="btn btn-primary">Check the website</a>
              </div>
             </div>
-            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-5 col-sm-12  p-3">
+              <img src="./images/projects/activity7.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 5 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project</p>
                 <a href="#" class="btn btn-primary">Check the website</a>
              </div>
             </div>
-            <div class="card m-3 bg-dark col-xl-3  col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card m-3 bg-dark col-xl-3  col-lg-3 col-md-5 col-sm-12  p-3">
+              <img src="./images/projects/activity8.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 6 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project.</p>
                 <a href="#" class="btn btn-primary">Check the website</a>
              </div>
             </div>
-            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-5 col-sm-12  p-3">
+              <img src="./images/projects/activity9.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 7 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project.</p>
@@ -349,15 +352,15 @@
              </div>
             </div>
             
-            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            <div class="card m-3 bg-dark col-xl-3 col-lg-3 col-md-5 col-sm-12 p-3">
+              <img src="./images/projects/activity10.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 8 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project</p>
                 <a href="#" class="btn btn-primary">Check the website</a>
              </div>
-            </div><div class="card  m-3 bg-dark col-xl-3 col-lg-3 col-md-6 col-sm-12">
-              <img src="..." class="card-img-top" alt="...">
+            </div><div class="card  m-3 bg-dark col-xl-3 col-lg-3 col-md-5 col-sm-12  p-3">
+              <img src="./images/projects/activity11.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Activity 9 project</h5>
                 <p class="card-text">Zuitt Bootcamp activity project.</p>
@@ -367,31 +370,23 @@
             
 
           </div>  
-
-          
-
            
-            
         </div>
-
-
 
     </section>
 
 
-      <section  id="contact">
+     <section id="contact">
          
         <h2 class="text-center">Connect with me</h2>
 
-        <div class="contact-container p-5">
-          
-          
-            
+        <div class="contact-container mt-5 pb-5">
+        
                 
-          <div class="d-flex justify-content-lg-around ">
+          <div class=" row justify-content-center">
 
-            <div class=" col-md-6 ">
-              <h5 class="text-center">Send me an email</h5>
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 mb-md-5  mb-sm-5">
+              <h5 class="text-center text-primary">Send me an email</h5>
             
               <form>
                 <div class="form-group">
@@ -413,35 +408,22 @@
 
               </form>
 
-            </div>    
-
-            <div class="location col-md-6">
-
-              <h4>Let's meet? Here's my location</h4>
-              <div class="mapouter ">
-                <div class="gmap_canvas">
-                  <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Camalig%20Albay&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google maps web pages</a>
-      
-                </div>
-              </div>
+            </div>   
             
-            </div>
 
-            
 
           </div>
-           
-            
-            
+    
 
         </div>
 
+      </section> 
 
 
-      </section>
+  </div>
 
-      <footer>
-        <div class="footer-container">
+      <footer >
+        <div class="footer-container ">
 
             <div class="footer-icons">
                 <ul>
@@ -462,10 +444,7 @@
             </div>
       </footer>
 
-    </div>
-  
-    
-    
+   
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

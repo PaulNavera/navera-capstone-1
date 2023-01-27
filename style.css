@@ -5,44 +5,29 @@
     font-family: 'VT323', monospace;
     
 }
-/* body{
-    background-color: #0a192f;
-}
-body section{
-    background-color: #0a192f;
-    color: white;
-} */
-
-body h2{
-    color: teal;
-   
-    font-weight:bolder;
-}
-
-body button:hover{
-    background-color: teal;
-}
 
 
 /*nav*/
 .nav-bar{
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     background-color: #0a192f;
-    position: fixed;
     z-index: 1;
     width: 100%;
-    padding: 10px;
+    border-bottom: 1px solid #64ffda;
 }
 
 
 .logo{
     font-size: 50px;
     font-weight: bolder;
+    padding-left: 20px;
 }
 
 .logo a{
-    color: teal;
+    color:  #64ffda;
 }
 
 .logo a:hover{
@@ -50,20 +35,6 @@ body button:hover{
     text-decoration: none;
 }
 
-.darkmode{
-    color: white;
-    font-size: 20px;
-    display: none;
-}
-/* .darkmode:hover{
-    cursor: pointer;
-    color: black;
-}
-.darkmode.active body{
-    
-        background-color: #0a192f;
-    }
- */
 
 .nav-menu{
     display: flex;
@@ -80,7 +51,7 @@ body button:hover{
 }
 
 .nav-bar .nav-a{
-    color: teal;
+    color:  #64ffda;
     font-size: 25px;
     text-decoration: none;
 
@@ -107,31 +78,87 @@ body button:hover{
 }
 
 .menu-btn .bar{
-    background-color: teal;
+    background-color:  #64ffda;
     width: 40px;
     height: 5px;
     margin: 5px;
     transition: all 0.3 ease
 }
 
+/*container*/
+
+.container-fluid{
+    
+    background-color: #0a192f;
+}
+
+.container-fluid h1, h2{
+    
+    color: #64ffda;
+}
+
+.container-fluid h5{
+    color: teal;
+}
 
 /* home */
 
-.home-container{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
-}
+
+
 .home-text{
-    width: 100;
-    height: auto;
-    padding: 12% 20px;
-    text-align: center;
-    
+    margin-top: 100px;
+}
+
+.home-text h1{
+    font-size: 50px;
+}
+
+.home-text p:nth-child(1){
+    font-size: 30px;
+    color: white;
     
 }
+.home-text p:nth-child(3){
+    font-size: 30px;
+    color: white;
+    
+}
+.home-text p:nth-child(4){
+    font-size: 20px;
+    color: white;
+    
+}
+
+
+.home-container h2{
+    font-size: 75px;
+    font-weight: bold;
+    border-bottom: 5px double #64ffda;
+
+}
+
+.home-container p{
+    font-size: 20px;
+
+}
+
 .home-container h1{
-    color: teal;
+    color:  #64ffda;
+}
+
+
+
+.banner{
+    margin-top: 100px;
+   
+}
+/*projects*/
+.skills-container h1{
+    border-bottom: 5px double #64ffda;
+}
+
+.skills-container h2{
+    color: white;
 }
 
 /* about */
@@ -141,24 +168,25 @@ body button:hover{
     font-size:20px;
 
 }
-
+.about-container{
+    padding-top: 50px;
+}
 
 .about-container img{
-    border: 1px solid teal;
-    border-radius: 50%;
+    border: 10px double  #64ffda;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
-/* gallery */
-#{
-    background-color: #0a192f;
-}
+
 
 /* skills */
 
 .my-skills img{
-    border: 2px solid teal;
+    border: 2px solid  #64ffda;
     border-radius: 10px;
     width: 50px;
     height: 50px;
@@ -172,10 +200,23 @@ body button:hover{
 
 
 .dev-tools img{
-    border: 2px solid teal;
+    border: 2px solid  #64ffda;
     border-radius: 50%;
     width: 100px;
     height:100px;
+}
+
+.skills-container h2{
+    color: #64ffda;
+}
+
+.dev-tools h3, .my-skills  h3 {
+    color: white;
+}
+
+.dev-tools h4, .skills-container h4{
+    color: white;
+
 }
 
 .tool-wrapper h4{
@@ -191,45 +232,34 @@ body button:hover{
 .other-projects p{
     color: white;
 }
+
+.featured-projects .card-title{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.other-projects .card-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
 /* contact */
-
-
-.contact-container{
-    display: flex;
-    justify-content: center;
-}
-
- h5{
-    justify-self: center;
-    color:teal;
-}
 
 form{
     margin-top: 20px;
 }
 
 form label{
-    color: teal;
+    color:  #64ffda;
 }
 
 form input{
     background-color: white;
 }
 
-form button{
-    background-color: #0a192f;
-    color: white;
-}
-
-
-.gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:300px;
-    width:300px;
-    border: 2px dotted teal;
-
-}
 
 
 /* footer */
@@ -239,7 +269,7 @@ form button{
     align-items: center;   
     flex-direction: column;
     background-color: #0a192f;
-    color: teal;
+    color:  #64ffda;
 }
 
 
@@ -271,7 +301,7 @@ form button{
 }
 .footer-icons li a:hover{
     
-    color: teal;
+    color:  #64ffda;
 
 }
 
@@ -279,9 +309,6 @@ form button{
     font-size: 20px;
     
 }
-
-@media all and (max-width: 576px){}
-
 
 
 @media all and (max-width: 768px){
@@ -293,13 +320,13 @@ form button{
     width: 400px;
     text-align: center;
     padding: 40px;
-    height: 1001vh;
+    height: 100vh;
     top:0;
     right: 0;
     background-color: #0a192f;
     transition:.3s ease;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    border-left: 2px solid  #64ffda;
+    z-index: 1;
 }
 
 .nav-menu.active{
@@ -307,10 +334,10 @@ form button{
     
 }
 
-body{
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+.menu-btn{
+    z-index: 1;
 }
+
 
 .nav-li{
     margin: 60px;
@@ -337,8 +364,8 @@ body{
     transform: translateY(-5px) rotate(-45deg)
 }
 
+.banner{
+    display: none;
+}
 
 }
-@media all and (max-width: 992px){}
-
-@media all and (max-width: 1200px){}
